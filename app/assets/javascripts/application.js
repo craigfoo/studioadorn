@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require turbolinks
 //= require canvas.slider.fade
 //= require swiper
 //= require plugins
