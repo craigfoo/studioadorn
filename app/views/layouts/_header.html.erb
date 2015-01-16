@@ -1,0 +1,75 @@
+<div id="header-trigger"><i class="icon-line-menu"></i><i class="icon-line-cross"></i></div>
+
+    <!-- Header
+    ============================================= -->
+    <header id="header" class="no-sticky">
+
+        <div id="header-wrap">
+
+            <div class="container clearfix">
+
+                <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                <!-- Logo
+                ============================================= -->
+                <div id="logo" class="nobottomborder">
+                    <a href="index.html" class="standard-logo" data-dark-logo=<%= asset_path('logo-side-dark.png') %>><%= image_tag("logo-side.png") %></a>
+                    <a href="index.html" class="retina-logo" data-dark-logo=<%= asset_path('logo-side-dark@2x.png') %>><%= image_tag("logo-side@2x.png") %></a>
+                </div><!-- #logo end -->
+
+                <!-- Primary Navigation
+                ============================================= -->
+                <nav id="primary-menu">
+
+                    <ul>
+                        <li>
+                            <%= link_to("Home", root_path) %>                           
+                        </li>
+                        <li>
+                            <%= link_to("The Studio", root_path) %>
+                        </li>
+                        <li>
+                            <%= link_to("Adorn Blog", root_path) %>
+                        </li>
+                        <li>
+                            <%= link_to("Studio Rental", root_path) %>
+                        </li>
+                        <li>
+                            <%= link_to("Get in Touch", root_path) %>
+                        </li>
+                    </ul>
+
+                </nav><!-- #primary-menu end -->
+
+                <div class="clearfix visible-md visible-lg">
+                    <a href="#" class="social-icon si-small si-borderless si-facebook">
+                        <i class="icon-facebook"></i>
+                        <i class="icon-facebook"></i>
+                    </a>
+
+                    <a href="#" class="social-icon si-small si-borderless si-twitter">
+                        <i class="icon-twitter"></i>
+                        <i class="icon-twitter"></i>
+                    </a>
+
+                    <a href="#" class="social-icon si-small si-borderless si-gplus">
+                        <i class="icon-gplus"></i>
+                        <i class="icon-gplus"></i>
+                    </a>
+
+                    <a href="#" class="social-icon si-small si-borderless si-pinterest">
+                        <i class="icon-pinterest"></i>
+                        <i class="icon-pinterest"></i>
+                    </a>
+
+                    <a href="#" class="social-icon si-small si-borderless si-github">
+                        <i class="icon-github"></i>
+                        <i class="icon-github"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header><!-- #header end -->
