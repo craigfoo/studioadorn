@@ -30,6 +30,7 @@ GEM
     arel (5.0.1.20140414130214)
     builder (3.2.2)
     erubis (2.7.0)
+    execjs (2.2.2)
     font-awesome-rails (4.2.0.0)
       railties (>= 3.2, < 5.0)
     hike (1.2.3)
@@ -93,6 +94,9 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2014.10)
       tzinfo (>= 1.0.0)
+    uglifier (2.7.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
 
 PLATFORMS
   x86-mingw32
@@ -107,3 +111,4 @@ DEPENDENCIES
   rails_12factor
   sdoc (~> 0.4.0)
   tzinfo-data
+  uglifier (>= 1.3.0)
