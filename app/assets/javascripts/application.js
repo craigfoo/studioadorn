@@ -16,3 +16,4 @@
 //= require canvas.slider.fade
 //= require plugins
 //= require turbolinks
+//= require functions
