@@ -10,10 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+
 //= require jquery.turbolinks
-//= require jquery_ujs
-//= require canvas.slider.fade
 //= require plugins
 //= require turbolinks
 //= require functions
+//= require canvas.slider.fade
