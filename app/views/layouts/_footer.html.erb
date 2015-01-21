@@ -1,0 +1,62 @@
+<!-- Footer
+============================================= -->
+<footer id="footer" class="dark">
+    <div id="copyrights">
+        <div class="container clearfix">
+            <div class="col_one_third">
+                
+                <%= link_to("http://www.facebook.com/studioadorn", class: "social-icon si-dark si-colored si-facebook nobottommargin center", style: "margin-right: 10px", target: "_blank") do %>
+                    <i class="icon-facebook"></i> 
+                    <i class="icon-facebook"></i>
+                    <%= t(:show).html_safe %>
+                <% end %>
+
+                <%= link_to("http://www.instagram.com/studioadorn", class: "social-icon si-dark si-colored si-instagram nobottommargin", style: "margin-right: 10px", target: "_blank") do %>
+                    <i class="icon-instagram"></i> 
+                    <i class="icon-instagram"></i>
+                    <%= t(:show).html_safe %>
+                <% end %>
+
+                <%= link_to("http://plus.google.com/studioadorn", class: "social-icon si-dark si-colored si-gplus nobottommargin", style: "margin-right: 10px", target: "_blank") do %>
+                    <i class="icon-gplus"></i> 
+                    <i class="icon-gplus"></i>
+                    <%= t(:show).html_safe %>
+                <% end %></br></br>
+                
+                &copy; <%= copyright_notice_year_range(2013) %> Studio Adorn. All Rights Reserved.
+                    <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+            </div>
+
+            <div class="col_one_third">
+
+                <i class="icon-envelope2"></i> info@studioadorn.com</br>
+                <i class="icon-headphones"></i> 321.345.9231</br>
+                <i class="icon-globe"></i> 2910 S. Maguire Road Suite 2011 Ocoee, FL 34761</br>
+                <i class="icon-clock"></i> Open from 8am - 8pm Everyday (by appt only)
+            </div>
+
+            <div class="col_one_third col_last">
+                <div class="fright clearfix">
+                     <div class="widget subscribe-widget clearfix">
+                        <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
+                        <div id="widget-subscribe-form-result" data-notify-type="success" data-notify-msg=""></div>
+                        <form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
+                            <div class="input-group divcenter">
+                                <span class="input-group-addon"><i class="icon-email2"></i></span>
+                                <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success" type="submit">Subscribe</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- #copyrights end -->
+
+</footer><!-- #footer end -->
+
+<!-- Go To Top
+============================================= -->
+<div id="gotoTop" class="icon-angle-up"></div>

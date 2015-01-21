@@ -1,35 +1,38 @@
-<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix ">
+<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
 
     <div class="swiper-container swiper-parent">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide dark" style="background-image: url('<%= asset_path('slider/swiper/1.jpg') %>')">
+                <div class="swiper-wrapper"> 
+        <div class="swiper-slide dark">
                 <div class="container clearfix">
                     <div class="slider-caption slider-caption-center">
+                        
                         <h2 data-caption-animate="fadeInUp"><%= image_tag('slider/swiper/logo-800px.png') %></h2> 
                         <h3 data-caption-animate="fadeInUp" data-caption-delay="200">Central Florida's Boutique Photography Rental Studio</h3>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide dark">
-                <div class="container clearfix">
-                    <div class="slider-caption slider-caption-center">
-                        <h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
-                        <p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-                    </div>
-                </div>
                 <div class="video-wrap">
-                    <video poster=<%= asset_path('videos/explore-poster.jpg') %> preload="auto" loop autoplay muted>
+                    <video poster=<%= asset_path('videos/explore-poster.jpg') %> preload="auto" loop="true" autoplay="true" muted="true">
                         <source src=<%= asset_path('videos/explore.mp4') %> type='video/mp4' />
                         <source src=<%= asset_path('videos/explore.webm') %> type='video/webm' />
                     </video>
                     <div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
                 </div>
             </div>
-            <div class="swiper-slide" style="background-image: url('<%= asset_path('slider/swiper/3.jpg') %>'); background-position: center top;">
+
+            <div class="swiper-slide dark" style="background-image: url('<%= asset_path('slider/swiper/1.jpg') %>')">
                 <div class="container clearfix">
-                    <div class="slider-caption">
-                        <h2 data-caption-animate="fadeInUp">Great Performance</h2>
-                        <p data-caption-animate="fadeInUp" data-caption-delay="200">You'll be surprised to see the Final Results of your Creation &amp; would crave for more.</p>
+                    <div class="slider-caption slider-caption-center">
+                        <h2 data-caption-animate="fadeInUp">A Photographers Playground</h2> 
+                        <h3 data-caption-animate="fadeInUp" data-caption-delay="200">Elegantly designed for a unique experience.</h3>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="swiper-slide dark" style="background-image: url('<%= asset_path('slider/swiper/3.jpg') %>'); background-position: center top;">
+                <div class="container clearfix">
+                    <div class="slider-caption slider-caption-center">
+                        <h2 data-caption-animate="fadeInUp">Built for Creativity</h2>
+                        <p data-caption-animate="fadeInUp" data-caption-delay="200">Conceived based on a need for an atypical space for private photo sessions.</p>
                     </div>
                 </div>
             </div>
@@ -41,339 +44,213 @@
     
 </section>
 
+
+
+
     <!-- Content
     ============================================= -->
     <section id="content">
 
-        <div class="content-wrap">
+        <div class="content-wrap nobottompadding">
+            
+            
+                    <div class="heading-block center">
+                        <h2>Studio Features</h2>
+                        <span>Truly a unique space.</span>
+                    </div>
 
-            <div class="promo promo-full promo-border header-stick bottommargin-lg">
+                    <div class="container clearfix">
+
+                        <div class="col_one_third">
+                            <div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn">
+                                <h3>Over 1200 sf of studio space</h3>
+                                <p>Every inch of the space is yours to use during your rental.</p>
+                            </div>
+                        </div>
+
+                        <div class="col_one_third">
+                            <div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn">
+                                <h3>10+ backdrops and setups</h3>
+                                <p>Make your session unique and wow your client.</p>
+                            </div>
+                        </div>
+
+                        <div class="col_one_third col_last">
+                            <div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn">
+
+                                <h3>Hair and makeup section</h3>
+                                <p>Everything you need to setup up to do your thing.</p>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="col_one_third">
+                            <div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn">
+                                <h3>Large windows with curtains</h3>
+                                <p>Use natural light, use strobes. Both will work.</p>
+                            </div>
+                        </div>
+
+                        <div class="col_one_third">
+                            <div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn">
+                                <h3>9ft wide seamless backdrops</h3>
+                                <p>Popular for headshots, pinup, or just a clean look.</p>
+                            </div>
+                        </div>
+
+                        <div class="col_one_third col_last">
+                            <div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn">
+
+                                <h3>Private 2nd floor, open space</h3>
+                                <p>Your client will feel right at home.</p>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                        
+                        <div class="col_one_third">
+                            <div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn">
+                                <h3>Free Wifi and Bluetooth Speaker</h3>
+                                <p>Keep your boom box at home, we have you covered.</p>
+                            </div>
+                        </div>
+
+                        <div class="col_one_third">
+                            <div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn">
+                                <h3>Memberships available</h3>
+                                <p>If you're a frequent renter, a membership makes sense.</p>
+                            </div>
+                        </div>
+
+                        <div class="col_one_third col_last">
+                            <div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn">
+
+                                <h3>Equipment rentals <%= image_tag('lens-pal-logo.jpg') %></h3>
+                                <p>Ask about special equipment rates via <%= link_to("The LensPal", "http://www.thelenspal.com", target: "_blank") %>. </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="divider divider-short divider-center topmargin-sm"><i class="icon-camera"></i></div>
+            
+            
+            
+                     <div class="section parallax" style="background-image: url('<%= asset_path('slider/swiper/1.jpg') %>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+                        <div class="heading-block center nobottomborder dark" style="margin-bottom: 0px;">
+                            <h2 style="margin-bottom: 0px;">“Perfect set up! So many areas to shoot and variety of looks."</h2>
+                        </div>
+                    </div>
+            
+            
+            
+            
+
+            <div class="promo promo-full bottommargin-sm">
                 <div class="container clearfix">
                     <h3>Call us today at <span>321.345.9231</span> or Email us at <span>info@studioadorn.com</span></h3>
-                    <span>We strive to provide Our Customers with Top Notch Support to make their Theme Experience Wonderful</span>
+                    <span>Book your boudoir, newborn, portrait, headshots, or any type of session at Studio Adorn today!</span>
                     <a href="#" class="button button-reveal button-xlarge"><i class="icon-angle-right"></i><span>Book Now</span></a>
                 </div>
             </div>
-
+            
+            <div class="divider divider-short divider-center topmargin-sm"><i class="icon-camera"></i></div>
+            
             <div class="container clearfix">
+            </div>  
 
-                <div class="col_one_third">
-                    <div class="feature-box fbox-effect">
-                        <div class="fbox-icon">
-                            <a href="#"><i class="icon-screen i-alt"></i></a>
+                <!-- Portfolio Items
+                ============================================= -->
+                <div id="portfolio" class="portfolio-3 portfolio-nomargin portfolio-notitle portfolio-full clearfix">
+                    <article class="portfolio-item pf-media pf-icons">
+                        <div class="portfolio-image">
+                                <%= image_tag('portfolio/thumbs/sa-1-thumb.jpg') %>                                
+                            <div class="portfolio-overlay">
+                                <a href=<%= asset_path('portfolio/sa-1.jpg') %>  data-lightbox="image"><i class="icon-line-plus"></i></a>                                
+                            </div>
                         </div>
-                        <h3>Responsive Layout</h3>
-                        <p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
-                    </div>
-                </div>
+                    </article>
 
-                <div class="col_one_third">
-                    <div class="feature-box fbox-effect">
-                        <div class="fbox-icon">
-                            <a href="#"><i class="icon-eye i-alt"></i></a>
+                    
+                    <article class="portfolio-item pf-media pf-icons">
+                        <div class="portfolio-image">
+                                <%= image_tag('portfolio/thumbs/sa-2-thumb.jpg') %>                                
+                            <div class="portfolio-overlay">
+                                <a href=<%= asset_path('portfolio/sa-2.jpg') %>  data-lightbox="image"><i class="icon-line-plus"></i></a>                                
+                            </div>
                         </div>
-                        <h3>Retina Ready Graphics</h3>
-                        <p>Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Retina Icons, Fonts &amp; all others graphics are optimized.</p>
-                    </div>
-                </div>
-
-                <div class="col_one_third col_last">
-                    <div class="feature-box fbox-effect">
-                        <div class="fbox-icon">
-                            <a href="#"><i class="icon-beaker i-alt"></i></a>
+                    </article>
+                    
+                    <article class="portfolio-item pf-media pf-icons">
+                        <div class="portfolio-image">
+                                <%= image_tag('portfolio/thumbs/sa-3-thumb.jpg') %>                                
+                            <div class="portfolio-overlay">
+                                <a href=<%= asset_path('portfolio/sa-4.jpg') %>  data-lightbox="image"><i class="icon-line-plus"></i></a>                                
+                            </div>
                         </div>
-                        <h3>Powerful Performance</h3>
-                        <p>Canvas includes tons of optimized code that are completely customizable and deliver unmatched fast performance.</p>
-                    </div>
-                </div>
-
-                <div class="clear"></div>
-
-                <div class="col_one_third nobottommargin">
-                    <div class="feature-box fbox-effect">
-                        <div class="fbox-icon">
-                            <a href="#"><i class="icon-stack i-alt"></i></a>
+                    </article>
+                    
+                    <article class="portfolio-item pf-media pf-icons">
+                        <div class="portfolio-image">
+                                <%= image_tag('portfolio/thumbs/sa-4-thumb.jpg') %>                                
+                            <div class="portfolio-overlay">
+                                <a href=<%= asset_path('portfolio/sa-4.jpg') %>  data-lightbox="image"><i class="icon-line-plus"></i></a>                                
+                            </div>
                         </div>
-                        <h3>Premium Sliders Included</h3>
-                        <p>Canvas included 20+ custom designed Slider Pages with Premium Sliders like Layer, Revolution, Swiper &amp; others.</p>
-                    </div>
-                </div>
-
-                <div class="col_one_third nobottommargin">
-                    <div class="feature-box fbox-effect">
-                        <div class="fbox-icon">
-                            <a href="#"><i class="icon-tint i-alt"></i></a>
+                    </article>
+                    
+                    <article class="portfolio-item pf-media pf-icons">
+                        <div class="portfolio-image">
+                                <%= image_tag('portfolio/thumbs/sa-5-thumb.jpg') %>                                
+                            <div class="portfolio-overlay">
+                                <a href=<%= asset_path('portfolio/sa-5.jpg') %>  data-lightbox="image"><i class="icon-line-plus"></i></a>                                
+                            </div>
                         </div>
-                        <h3>Unlimited Color Options</h3>
-                        <p>Change the color scheme of the Theme in a flash just by changing the 6-digit HEX code in the colors.php file.</p>
-                    </div>
-                </div>
-
-                <div class="col_one_third nobottommargin col_last">
-                    <div class="feature-box fbox-effect">
-                        <div class="fbox-icon">
-                            <a href="#"><i class="icon-text-width i-alt"></i></a>
+                    </article>
+                    
+                    <article class="portfolio-item pf-media pf-icons">
+                        <div class="portfolio-image">
+                                <%= image_tag('portfolio/thumbs/sa-6-thumb.jpg') %>                                
+                            <div class="portfolio-overlay">
+                                <a href=<%= asset_path('portfolio/sa-6.jpg') %>  data-lightbox="image"><i class="icon-line-plus"></i></a>                                
+                            </div>
                         </div>
-                        <h3>CUSTOMIZABLE FONTS</h3>
-                        <p>Use any Font you like from Google Web Fonts, Typekit or other Web Fonts. They will blend in perfectly.</p>
-                    </div>
-                </div>
+                    </article>
+                    
+                    <article class="portfolio-item pf-media pf-icons">
+                        <div class="portfolio-image">
+                                <%= image_tag('portfolio/thumbs/sa-7-thumb.jpg') %>                                
+                            <div class="portfolio-overlay">
+                                <a href=<%= asset_path('portfolio/sa-7.jpg') %>  data-lightbox="image"><i class="icon-line-plus"></i></a>                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                                                            
+                    <article class="portfolio-item pf-media pf-icons">
+                        <div class="portfolio-image">
+                                <%= image_tag('portfolio/thumbs/sa-8-thumb.jpg') %>                                
+                            <div class="portfolio-overlay">
+                                <a href=<%= asset_path('portfolio/sa-8.jpg') %>  data-lightbox="image"><i class="icon-line-plus"></i></a>                                
+                            </div>
+                        </div>
+                    </article>                                      
+                    
+                    <article class="portfolio-item pf-media pf-icons">
+                        <div class="portfolio-image">
+                                <%= image_tag('portfolio/thumbs/sa-9-thumb.jpg') %>                                
+                            <div class="portfolio-overlay">
+                                <a href=<%= asset_path('portfolio/sa-9.jpg') %>  data-lightbox="image"><i class="icon-line-plus"></i></a>                                
+                            </div>
+                        </div>
+                    </article>
 
-                <div class="clear"></div><div class="line"></div>
 
-                <div id="oc-clients-full" class="owl-carousel image-carousel">
+                </div><!-- #portfolio end -->
 
-                    <a href="#"><img src=<%= asset_path('clients/1.png') %> alt="Clients"></a>
-                    <a href="#"><img src=<%= asset_path('clients/2.png') %> alt="Clients"></a>
-                    <a href="#"><img src=<%= asset_path('clients/3.png') %> alt="Clients"></a>
-                    <a href="#"><img src=<%= asset_path('clients/4.png') %> alt="Clients"></a>
-                    <a href="#"><img src=<%= asset_path('clients/5.png') %> alt="Clients"></a>
-                    <a href="#"><img src=<%= asset_path('clients/6.png') %> alt="Clients"></a>
-                    <a href="#"><img src=<%= asset_path('clients/7.png') %> alt="Clients"></a>
-                    <a href="#"><img src=<%= asset_path('clients/8.png') %> alt="Clients"></a>
-                    <a href="#"><img src=<%= asset_path('clients/9.png') %> alt="Clients"></a>
-                    <a href="#"><img src=<%= asset_path('clients/10.png') %> alt="Clients"></a>
-                    <a href="#"><img src=<%= asset_path('clients/11.png') %> alt="Clients"></a>
-                    <a href="#"><img src=<%= asset_path('clients/12.png') %> alt="Clients"></a>
 
-                </div>
-
-            </div>
-
-        </div>
-
+        
     </section><!-- #content end -->
 
-    <!-- Footer
-    ============================================= -->
-    <footer id="footer" class="dark">
-
-        <div class="container">
-
-            <!-- Footer Widgets
-            ============================================= -->
-            <div class="footer-widgets-wrap clearfix">
-
-                <div class="col_two_third">
-
-                    <div class="col_one_third">
-
-                        <div class="widget clearfix">
-
-                            <img src=<%= asset_path('footer-widget-logo.png') %> alt="" class="footer-logo">
-
-                            <p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
-
-                            <div style="background: url('<%= asset_path('world-map.png') %>') no-repeat center center; background-size: 100%;">
-                                
-                                <address>
-                                    <strong>Headquarters:</strong><br>
-                                    795 Folsom Ave, Suite 600<br>
-                                    San Francisco, CA 94107<br>
-                                </address>
-                                <abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
-                                <abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>
-                                <abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col_one_third">
-
-                        <div class="widget widget_links clearfix">
-
-                            <h4>Blogroll</h4>
-
-                            <ul>
-                                <li><a href="http://codex.wordpress.org/">Documentation</a></li>
-                                <li><a href="http://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
-                                <li><a href="http://wordpress.org/extend/plugins/">Plugins</a></li>
-                                <li><a href="http://wordpress.org/support/">Support Forums</a></li>
-                                <li><a href="http://wordpress.org/extend/themes/">Themes</a></li>
-                                <li><a href="http://wordpress.org/news/">WordPress Blog</a></li>
-                                <li><a href="http://planet.wordpress.org/">WordPress Planet</a></li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col_one_third col_last">
-
-                        <div class="widget clearfix">
-                            <h4>Recent Posts</h4>
-
-                            <div id="post-list-footer">
-                                <div class="spost clearfix">
-                                    <div class="entry-c">
-                                        <div class="entry-title">
-                                            <h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
-                                        </div>
-                                        <ul class="entry-meta">
-                                            <li>10th July 2014</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="spost clearfix">
-                                    <div class="entry-c">
-                                        <div class="entry-title">
-                                            <h4><a href="#">Elit Assumenda vel amet dolorum quasi</a></h4>
-                                        </div>
-                                        <ul class="entry-meta">
-                                            <li>10th July 2014</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="spost clearfix">
-                                    <div class="entry-c">
-                                        <div class="entry-title">
-                                            <h4><a href="#">Debitis nihil placeat, illum est nisi</a></h4>
-                                        </div>
-                                        <ul class="entry-meta">
-                                            <li>10th July 2014</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col_one_third col_last">
-
-                    <div class="widget clearfix" style="margin-bottom: -20px;">
-
-                        <div class="row">
-
-                            <div class="col-md-6 bottommargin-sm">
-                                <div class="counter counter-small"><span data-from="50" data-to="15065421" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
-                                <h5 class="nobottommargin">Total Downloads</h5>
-                            </div>
-
-                            <div class="col-md-6 bottommargin-sm">
-                                <div class="counter counter-small"><span data-from="100" data-to="18465" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
-                                <h5 class="nobottommargin">Clients</h5>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="widget subscribe-widget clearfix">
-                        <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
-                        <div id="widget-subscribe-form-result" data-notify-type="success" data-notify-msg=""></div>
-                        <form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
-                            <div class="input-group divcenter">
-                                <span class="input-group-addon"><i class="icon-email2"></i></span>
-                                <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-success" type="submit">Subscribe</button>
-                                </span>
-                            </div>
-                        </form>
-                       
-                    </div>
-
-                    <div class="widget clearfix" style="margin-bottom: -20px;">
-
-                        <div class="row">
-
-                            <div class="col-md-6 clearfix bottommargin-sm">
-                                <a href="#" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">
-                                    <i class="icon-facebook"></i>
-                                    <i class="icon-facebook"></i>
-                                </a>
-                                <a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
-                            </div>
-                            <div class="col-md-6 clearfix">
-                                <a href="#" class="social-icon si-dark si-colored si-rss nobottommargin" style="margin-right: 10px;">
-                                    <i class="icon-rss"></i>
-                                    <i class="icon-rss"></i>
-                                </a>
-                                <a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div><!-- .footer-widgets-wrap end -->
-
-        </div>
-
-        <!-- Copyrights
-        ============================================= -->
-        <div id="copyrights">
-
-            <div class="container clearfix">
-
-                <div class="col_half">
-                    Copyrights &copy; 2014 All Rights Reserved by Canvas Inc.<br>
-                    <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
-                </div>
-
-                <div class="col_half col_last tright">
-                    <div class="fright clearfix">
-                        <a href="#" class="social-icon si-small si-borderless si-facebook">
-                            <i class="icon-facebook"></i>
-                            <i class="icon-facebook"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-small si-borderless si-twitter">
-                            <i class="icon-twitter"></i>
-                            <i class="icon-twitter"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-small si-borderless si-gplus">
-                            <i class="icon-gplus"></i>
-                            <i class="icon-gplus"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-small si-borderless si-pinterest">
-                            <i class="icon-pinterest"></i>
-                            <i class="icon-pinterest"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-small si-borderless si-vimeo">
-                            <i class="icon-vimeo"></i>
-                            <i class="icon-vimeo"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-small si-borderless si-github">
-                            <i class="icon-github"></i>
-                            <i class="icon-github"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-small si-borderless si-yahoo">
-                            <i class="icon-yahoo"></i>
-                            <i class="icon-yahoo"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-small si-borderless si-linkedin">
-                            <i class="icon-linkedin"></i>
-                            <i class="icon-linkedin"></i>
-                        </a>
-                    </div>
-
-                    <div class="clear"></div>
-
-                    <i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +91-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> CanvasOnSkype
-                </div>
-
-            </div>
-
-        </div><!-- #copyrights end -->
-
-    </footer><!-- #footer end -->
-
-<!-- Go To Top
-============================================= -->
-<div id="gotoTop" class="icon-angle-up"></div>
+    

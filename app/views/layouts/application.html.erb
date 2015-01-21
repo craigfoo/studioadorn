@@ -11,14 +11,14 @@
 
 </head>
 <body class="stretched side-header side-header-right open-header close-header-on-scroll">
-<!--    <div id="wrapper" class="clearfix">-->
+
 
 
 <%= render 'layouts/header' %>
 
 <%= yield %>
         
-<!--    </div>-->
+<%= render 'layouts/footer' %>
 
 
 <%= javascript_include_tag 'jquery', 'data-turbolinks-track' => true %>
@@ -29,7 +29,7 @@
 <%= javascript_include_tag 'functions', 'data-turbolinks-track' => true %>
 <%= javascript_include_tag 'canvas.slider.fade', 'data-turbolinks-track' => true %>
 
-      <script>
+<script>
     jQuery(document).ready(function($){
         var swiperSlider = new Swiper('.swiper-parent',{
             paginationClickable: false,
@@ -98,7 +98,41 @@
         $('#slide-number-current').html(swiperSlider.activeIndex + 1);
         $('#slide-number-total').html(swiperSlider.slides.length);
     });
-</script>
+
+    
+//<!-- Portfolio Script
+//============================================= -->
+
+    jQuery(window).load(function(){
+
+        var $container = $('#portfolio');
+
+        $container.isotope({ transitionDuration: '0.65s' });
+
+        $('#portfolio-filter a').click(function(){
+            $('#portfolio-filter li').removeClass('activeFilter');
+            $(this).parent('li').addClass('activeFilter');
+            var selector = $(this).attr('data-filter');
+            $container.isotope({ filter: selector });
+            return false;
+        });
+
+        $('#portfolio-shuffle').click(function(){
+            $container.isotope('updateSortData').isotope({
+                sortBy: 'random'
+            });
+        });
+
+        $(window).resize(function() {
+            $container.isotope('layout');
+        });
+
+    });
+
+</script><!-- Portfolio Script End -->
+            
+            
+            
     
     
 </body>

@@ -26,13 +26,13 @@
                             <%= link_to("Home", root_path) %>                           
                         </li>
                         <li>
-                            <%= link_to("The Studio", root_path) %>
+                            <%= link_to("Our Story", about_path) %>
                         </li>
                         <li>
                             <%= link_to("Adorn Blog", root_path) %>
                         </li>
                         <li>
-                            <%= link_to("Studio Rental", root_path) %>
+                            <%= link_to("Studio Rental", booking_path) %>
                         </li>
                         <li>
                             <%= link_to("Get in Touch", root_path) %>
@@ -42,30 +42,23 @@
                 </nav><!-- #primary-menu end -->
 
                 <div class="clearfix visible-md visible-lg">
-                    <a href="#" class="social-icon si-small si-borderless si-facebook">
-                        <i class="icon-facebook"></i>
-                        <i class="icon-facebook"></i>
-                    </a>
+                    
+                    <%= link_to("http://www.facebook.com/studioadorn", class: "social-icon si-small si-borderless si-facebook", target: "_blank") do %>
+                        <i class="icon-facebook"></i> 
+                        <i class="icon-facebook"></i>                    
+                    <% end %>
 
-                    <a href="#" class="social-icon si-small si-borderless si-twitter">
-                        <i class="icon-twitter"></i>
-                        <i class="icon-twitter"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-gplus">
+                    
+                    <%= link_to("http://www.instagram.com/studioadorn", class: "social-icon si-small si-borderless si-instagram", target: "_blank") do %>
+                        <i class="icon-instagram"></i>
+                        <i class="icon-instagram"></i>
+                    <% end %>
+                    
+                    <%= link_to("https://plus.google.com/u/0/b/116502175131665083122/116502175131665083122", class: "social-icon si-small si-borderless si-gplus", target: "_blank") do %>
                         <i class="icon-gplus"></i>
                         <i class="icon-gplus"></i>
-                    </a>
+                    <% end %>
 
-                    <a href="#" class="social-icon si-small si-borderless si-pinterest">
-                        <i class="icon-pinterest"></i>
-                        <i class="icon-pinterest"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-github">
-                        <i class="icon-github"></i>
-                        <i class="icon-github"></i>
-                    </a>
                 </div>
 
             </div>
